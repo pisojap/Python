@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_d9fd4ba067df41a5af978a5019a29684 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d9fd4ba067df41a5af978a5019a29684" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_d9fd4ba067df41a5af978a5019a29684 = L.map(
+                                  'map_d9fd4ba067df41a5af978a5019a29684',
+                                  {center: [49.146499,18.288731],
+                                  zoom: 8,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_56cff754d6114c9aa87c79585f8dd0de = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_d9fd4ba067df41a5af978a5019a29684);
+        
+    
+            var feature_group_7620965265da4afcb97190ca7fbb200f = L.featureGroup(
+                ).addTo(map_d9fd4ba067df41a5af978a5019a29684);
+        
+    
+            var circle_marker_b96e435b9b364481bbd32dcb00aaaebb = L.circleMarker(
+                [48.17,17.212],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "yellowgreen",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_7620965265da4afcb97190ca7fbb200f);
+            
+    
+            var popup_06bf9162266f470ab50e3655c561886a = L.popup({maxWidth: '300'});
+
+            
+                var html_895097356afe4297a731ad8a3211950a = $('<div id="html_895097356afe4297a731ad8a3211950a" style="width: 100.0%; height: 100.0%;">[ Letisko M. R. Štefánika Bratislava ]</div>')[0];
+                popup_06bf9162266f470ab50e3655c561886a.setContent(html_895097356afe4297a731ad8a3211950a);
+            
+
+            circle_marker_b96e435b9b364481bbd32dcb00aaaebb.bindPopup(popup_06bf9162266f470ab50e3655c561886a);
+
+            
+        
+    
+            var circle_marker_8ab280572e6d4925857702417aefa3a9 = L.circleMarker(
+                [48.663000000000004,21.241],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "yellowgreen",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_7620965265da4afcb97190ca7fbb200f);
+            
+    
+            var popup_d9c45142102e43a2aba8bc83ed695008 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ec54968113f4f749a37a555a000d32a = $('<div id="html_1ec54968113f4f749a37a555a000d32a" style="width: 100.0%; height: 100.0%;">[ Košice International Airport ]</div>')[0];
+                popup_d9c45142102e43a2aba8bc83ed695008.setContent(html_1ec54968113f4f749a37a555a000d32a);
+            
+
+            circle_marker_8ab280572e6d4925857702417aefa3a9.bindPopup(popup_d9c45142102e43a2aba8bc83ed695008);
+
+            
+        
+    
+            var circle_marker_a479699db3a14431945451dd00f72121 = L.circleMarker(
+                [48.402,17.118],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "yellowgreen",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_7620965265da4afcb97190ca7fbb200f);
+            
+    
+            var popup_46831a24b80b4fd6acc7d5a1d98ed88f = L.popup({maxWidth: '300'});
+
+            
+                var html_4278359ba3184e79ac11f910fdbff848 = $('<div id="html_4278359ba3184e79ac11f910fdbff848" style="width: 100.0%; height: 100.0%;">[ Letecká základňa Malacky ]</div>')[0];
+                popup_46831a24b80b4fd6acc7d5a1d98ed88f.setContent(html_4278359ba3184e79ac11f910fdbff848);
+            
+
+            circle_marker_a479699db3a14431945451dd00f72121.bindPopup(popup_46831a24b80b4fd6acc7d5a1d98ed88f);
+
+            
+        
+    
+            var circle_marker_c46c0ab54e6c48ac9040fb81be0f00de = L.circleMarker(
+                [48.62396,17.828110000000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "yellowgreen",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_7620965265da4afcb97190ca7fbb200f);
+            
+    
+            var popup_74b59a7236ed4479b405e20964dcb773 = L.popup({maxWidth: '300'});
+
+            
+                var html_93b5e8dc381348ae927062c414231d0f = $('<div id="html_93b5e8dc381348ae927062c414231d0f" style="width: 100.0%; height: 100.0%;">[ Letisko Piešťany ]</div>')[0];
+                popup_74b59a7236ed4479b405e20964dcb773.setContent(html_93b5e8dc381348ae927062c414231d0f);
+            
+
+            circle_marker_c46c0ab54e6c48ac9040fb81be0f00de.bindPopup(popup_74b59a7236ed4479b405e20964dcb773);
+
+            
+        
+    
+            var circle_marker_865aab35e6684f78b1c3fc4f9a2b4a50 = L.circleMarker(
+                [48.638000000000005,19.134],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "yellowgreen",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_7620965265da4afcb97190ca7fbb200f);
+            
+    
+            var popup_9bcfb2e938a54ce7ac8a3bfaa6d62263 = L.popup({maxWidth: '300'});
+
+            
+                var html_028e80a1cae541c68e378eb4e3a6f192 = $('<div id="html_028e80a1cae541c68e378eb4e3a6f192" style="width: 100.0%; height: 100.0%;">[ Tri duby Sliač ]</div>')[0];
+                popup_9bcfb2e938a54ce7ac8a3bfaa6d62263.setContent(html_028e80a1cae541c68e378eb4e3a6f192);
+            
+
+            circle_marker_865aab35e6684f78b1c3fc4f9a2b4a50.bindPopup(popup_9bcfb2e938a54ce7ac8a3bfaa6d62263);
+
+            
+        
+    
+            var circle_marker_22ba2cc7a6c4479a841e2c16a7435ef9 = L.circleMarker(
+                [48.865,17.992],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "yellowgreen",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_7620965265da4afcb97190ca7fbb200f);
+            
+    
+            var popup_2e8527358c354873b5b01cd573a74e16 = L.popup({maxWidth: '300'});
+
+            
+                var html_9f593f8d49d74d68a6634f1251655e73 = $('<div id="html_9f593f8d49d74d68a6634f1251655e73" style="width: 100.0%; height: 100.0%;">[ Letisko Trenčín (ZTN) ]</div>')[0];
+                popup_2e8527358c354873b5b01cd573a74e16.setContent(html_9f593f8d49d74d68a6634f1251655e73);
+            
+
+            circle_marker_22ba2cc7a6c4479a841e2c16a7435ef9.bindPopup(popup_2e8527358c354873b5b01cd573a74e16);
+
+            
+        
+    
+            var circle_marker_cff17a15055c48e2b9a86eaa714d5ddd = L.circleMarker(
+                [49.073,20.241],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "yellowgreen",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_7620965265da4afcb97190ca7fbb200f);
+            
+    
+            var popup_d6679a6adf01494cbcb7f571ce3a2902 = L.popup({maxWidth: '300'});
+
+            
+                var html_ff5780bbb3be459f9f1beddf2033d219 = $('<div id="html_ff5780bbb3be459f9f1beddf2033d219" style="width: 100.0%; height: 100.0%;">[ Letisko Poprad-Tatry ]</div>')[0];
+                popup_d6679a6adf01494cbcb7f571ce3a2902.setContent(html_ff5780bbb3be459f9f1beddf2033d219);
+            
+
+            circle_marker_cff17a15055c48e2b9a86eaa714d5ddd.bindPopup(popup_d6679a6adf01494cbcb7f571ce3a2902);
+
+            
+        
+    
+            var circle_marker_5d980a7dcd73458984743410201befa9 = L.circleMarker(
+                [49.232,18.614],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "yellowgreen",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_7620965265da4afcb97190ca7fbb200f);
+            
+    
+            var popup_0d33c6e5019d4e449da3d6ada5a383b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_ac69d952bbb44d3d9218db6d3bbb610b = $('<div id="html_ac69d952bbb44d3d9218db6d3bbb610b" style="width: 100.0%; height: 100.0%;">[ Letisko Hričov ]</div>')[0];
+                popup_0d33c6e5019d4e449da3d6ada5a383b4.setContent(html_ac69d952bbb44d3d9218db6d3bbb610b);
+            
+
+            circle_marker_5d980a7dcd73458984743410201befa9.bindPopup(popup_0d33c6e5019d4e449da3d6ada5a383b4);
+
+            
+        
+</script>
