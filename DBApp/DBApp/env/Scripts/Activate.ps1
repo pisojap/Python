@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\peterp\source\repos\DBApp\DBApp\env"
+$env:VIRTUAL_ENV="C:\Users\peterp\Source\Repos\pythoncourse\DBApp\DBApp\env"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name

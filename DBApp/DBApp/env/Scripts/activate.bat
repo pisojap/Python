@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\peterp\source\repos\DBApp\DBApp\env"
+set "VIRTUAL_ENV=C:\Users\peterp\Source\Repos\pythoncourse\DBApp\DBApp\env"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"

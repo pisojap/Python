@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4f15289f-7e64-44e7-8770-cb61b59fab18</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DBApp.py</StartupFile>
+    <StartupFile>backend.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="backend.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DBApp.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
