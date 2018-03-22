@@ -261,3 +261,4 @@ __pycache__/
 *.pyc
 /MapGenerator/MapGenerator/env
 /BankAccount/BankAccount/env
+/OpenCV/OpenCV/env
