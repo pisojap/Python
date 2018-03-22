@@ -8,4 +8,4 @@ class Account:
         return self.balance
 
 account = Account("balance.txt")
-print(account.getBalance())
+print(account.getBalance()) 
