@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /MapGenerator/MapGenerator/env
+/BankAccount/BankAccount/env

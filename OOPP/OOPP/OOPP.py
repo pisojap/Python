@@ -10,6 +10,9 @@ class Database:
         self.cur.execute("CREATE TABLE IF NOT EXISTS %s (id INTEGER PRIMARY KEY, Title TEXT, author TEXT, year INTEGER, isbn INTEGER)" % self.table)
         self.conn.commit()
 
+    def __enter__(self):
+        return self
+
     def insert(self, title, author, year, isbn):
         self.cur.execute("INSERT INTO " + self.table + " VALUES (NULL, ?, ?, ?, ?)", (title, author, year, isbn))            
         self.conn.commit()
@@ -31,3 +34,8 @@ class Database:
     def update(self, id, title, author, year, isbn):
         self.cur.execute("UPDATE " + self.table + " SET title=?, author=?, year=?, isbn=? WHERE id=?", (id, title, author, year, isbn, id))            
         self.conn.commit()
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.cur.close()
+        self.conn.close()
+        print(self.conn)
