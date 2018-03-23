@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>094bba2d-92f6-4eef-a4ad-0d759672e5eb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>cameraCapture.py</StartupFile>
+    <StartupFile>motion_detector.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
