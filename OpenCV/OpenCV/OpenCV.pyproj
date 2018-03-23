@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>094bba2d-92f6-4eef-a4ad-0d759672e5eb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>OpenCV.py</StartupFile>
+    <StartupFile>cameraCapture.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="cameraCapture.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="faceDetection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="motion_detector.py" />
     <Compile Include="OpenCV.py" />
+    <Compile Include="plotting.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
@@ -36,10 +44,12 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="references\" />
+    <Folder Include="C:\Users\peterp\Source\Repos\pythoncourse\OpenCV\OpenCV\srcFolder\" />
+    <Folder Include="srcFolder\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="srcFolder\haarcascade_frontalface_default.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
