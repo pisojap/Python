@@ -4,6 +4,8 @@ import sys
 import win32event
 import win32service
 import win32serviceutil
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 
 
 class TestService(win32serviceutil.ServiceFramework):
@@ -22,6 +24,23 @@ class TestService(win32serviceutil.ServiceFramework):
     def SvcDoRun(self):
         rc = None
         while rc != win32event.WAIT_OBJECT_0:
+            app = QApplication([])
+            app.setQuitOnLastWindowClosed(False)
+
+            icon = QIcon("icon.png")
+
+            tray = QSystemTrayIcon()
+            tray = QSystemTrayIcon(icon)
+            tray.setVisible(True)
+
+            menu = QMenu()
+            action = QAction("A menu item")
+            menu.addAction(action)
+
+            tray.setContextMenu(menu)
+
+            app.exec()
+
             with open('C:\\TestService.log', 'a') as f:
                 f.write('test service running...\n')
             rc = win32event.WaitForSingleObject(self.hWaitStop, 5000)
